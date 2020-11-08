@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context=".MainActivity"
+    style="@style/mystyle">
+
+    <TableRow>
+
+        <TextView
+            android:text="Name:"
+            style="@style/mystyle"/>
+
+        <EditText
+            android:id="@+id/txtName"
+            android:width="200dp"
+            android:text=""
+            style="@style/mystyle"/>
+
+        />
+    </TableRow>
+    <TableRow>
+        <TextView
+            android:text="Height"
+            style="@style/mystyle"/>
+
+        <EditText
+            android:id="@+id/height"
+            android:width="200dp"
+            android:inputType="number|numberDecimal"
+            android:text=""
+            style="@style/mystyle"/>
+
+    </TableRow>
+    <TableRow>
+        <TextView
+            android:text="Weight"
+            style="@style/mystyle"/>
+
+        <EditText
+            android:id="@+id/weight"
+            android:inputType="number|numberDecimal"
+            android:text=""
+            android:width="200dp"
+            style="@style/mystyle"/>
+
+    </TableRow>
+<TableRow>
+    <TextView
+        android:text="Select Gender "
+        style="@style/mystyle"
+        />
+
+    <Spinner
+        android:id="@+id/spenergender"
+        style="@style/mystyle"
+        android:text="Select Gender" />
+
+</TableRow>
+    <TableRow>
+        <Button
+            android:text="Save"
+            style="@style/mystyle"
+            android:onClick="onclickSave"/>
+        <CheckBox
+            android:id="@+id/checkbox"/>
+    </TableRow>
+    <TableRow>
+        <Button
+            android:id="@+id/calculate"
+            android:text="Calculate BMI"
+            android:onClick="btnOnclickcalculate"
+            style="@style/mystyle"/>
+    </TableRow>
+
+    <TableRow>
+
+        <TextView
+            android:id="@+id/result"
+            android:textSize="20dp"
+            android:text=""
+            style="@style/mystyle"/>
+
+
+    </TableRow>
+<TableRow>
+    <Button
+        android:id="@+id/btnSend"
+        android:text=" Start to calculate"
+        android:onClick="onClicksend"
+        style="@style/mystyle"/>
+</TableRow>
+
+
+</TableLayout>
